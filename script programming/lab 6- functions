@@ -1,0 +1,43 @@
+clc;
+clearvars;
+close all;
+
+% lab 6
+% variables, scripts, and functions
+
+% ------------- 1) creating functions ------------
+% create a matlab function that is defined by the matlab rules for
+% declaring functions. Function should contain short description, usable w/
+% help command which contains info on how the function works, is used, and
+% what variables are used
+
+% FUNCTION: calculates temperature in fahrenheit, when temp in kelvin is
+% given
+% function inputs; temp in kelvin
+% function outputs temp in F
+% function name kelv2far
+
+kelvin = input("Enter any number: ");
+fahrenheit = kelv2far(kelvin);
+disp(['Temperature in Fahrenheit: ', num2str(fahrenheit)]);
+
+
+
+function fahrenheit = kelv2far(kelvin)
+%
+%   KELV2FAR(KELVIN) converts temperature from kelvin to 
+%   fahrenheit using the formula:
+%       fahrenheit = (kelvin * (9/5)) - 459.67
+%
+%   Inputs:
+%   - KELVIN: temp in kelvin.
+%
+%   Outputs:
+%   - FAHRENHEIT: temp in fahrenheit
+
+%
+%   Example:
+%   fahrenheit = kelv2far(300); % Convert 300 kelvin to fahrenheit
+
+    fahrenheit = (kelvin * (9/5)) - 459.67;
+end
