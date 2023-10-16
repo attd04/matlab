@@ -62,17 +62,13 @@ banksInterestRates = [0.10, 0.15, 0.20];  % interest rates for banks
 % loop
 for i = 1:length(loanSizes)
     loanSize = loanSizes(i); % assigns current loan size to variable
-    
-    disp(['   ', num2str(loanSize, '%5d'), ... % displays and calculates 
-          '         ', num2str(loanSize * banksInterestRates(1), '%.2f'), ...
-          '          ', num2str(loanSize * banksInterestRates(2), '%.2f'), ...
-          '          ', num2str(loanSize * banksInterestRates(3), '%.2f')]);
+    % converts numbers to character array after calculating
+    disp(['   ', num2str(loanSize), ... % displays and calculates 
+          '         ', num2str(loanSize * banksInterestRates(1)), ...
+          '          ', num2str(loanSize * banksInterestRates(2)), ...
+          '          ', num2str(loanSize * banksInterestRates(3))]);
 end
 
-
-clc;
-close all;
-clearvars; 
 
 % ------------- COMP TASK- in SEPARATE tab ------------------
 % Create a program which would ask a user to select 2 numbers x and y
