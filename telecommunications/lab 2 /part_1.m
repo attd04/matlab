@@ -101,7 +101,7 @@ xlabel('Time (s)'); % x-axis label
 ylabel('Amplitude'); % y-axis label
 
 % Average the ten vectors and analyze the result
-sum_sine = (sine1 + sine2 + sine4) ./ 3;
+sum_sine = (sine1 + sine2 + sine3 + sine4) ./ 4;
 % calculates average of the signals 
 
 figure; % add figure for the plot
