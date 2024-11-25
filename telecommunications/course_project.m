@@ -32,7 +32,7 @@ for i = 1 : M
 end
 
 % defining EbNo range and initialize result arrays
-EbNo = -10:1:60;
+EbNo = -10:1:30;
 ser = zeros(1,length(EbNo));
 ber = zeros(1,length(EbNo));
 snr = zeros(1,length(EbNo));
